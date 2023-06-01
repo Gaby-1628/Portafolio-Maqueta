@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: #1D4350;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A43931, #1D4350);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A43931, #1D4350);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: auto;
+}
+
+header .menu {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: right;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.navbard {
+    display: flex;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.navbard a {
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    transition: 0.5;
+}
+
+.navbard a:hover {
+    color: #070621;
+    background-color: rgba(92, 87, 242, 0.809);
+    font-weight: bold;
+}
+
+.banner {
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.textos {
+    width: 50%;
+    color: #000;
+}
+
+img {
+    margin-top: 80px;
+    display: block;
+    height: 450px;
+    object-fit: cover;
+    animation: moverDerecha 2s ease-in;
+}
+
+/* .banner {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+} */
+
+.titulo {
+    font-size: 40px;
+    margin-top: 10rem;
+    text-align: center;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.subtitulo {
+    color: #f2f2f2;
+    font-size: 20px;
+    margin-bottom: 5rem;
+    text-align: center;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.button {
+    margin-left: 220px;
+    padding: 10px 18px;
+    border: 1px solid #f2f2f2;
+    background-color: transparent;
+    color: #f2f2f2;
+    border-radius: 20px;
+    cursor: pointer;
+    animation: moverArriba 2s ease-in;
+    z-index: 2;
+    transition: .5;
+}
+
+.button:hover {
+    font-weight: bold;
+    color: #121212;
+    background-color: #f2f2f2;
+}
+
+a .fa-arrow-right {
+    font-size: 20px;
+    color: #f2f2f2;
+}
+
+.line {
+    height: 300px;
+    width: 100%;
+    background: #1D4350;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A43931, #1D4350);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A43931, #1D4350);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* ------------------------------------------------------------ */
+/* ---------------------------- ABAUT ------------------------- */
+/* ------------------------------------------------------------ */
+
+#abaut {
+    width: 100%;
+    margin-top: 100px;
+}
+
+#abaut img {
+    background-image: url(../img/blob.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    width: 100%;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.softkil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.fa-brands, 
+.fa-solid {
+    font-size: 32px;
+    padding: 20px;
+    color: #070621;
+    display: inline-block;
+}
+
+.fa-brands:hover {
+    font-size: 50px;
+    color: #A43931;
+}
+
+.fa-database:hover {
+    font-size: 50px;
+    color: #39a060;
+}
+
+.fa-node:hover {
+    color: #12b707;
+}
+
+.fa-react:hover {
+    font-size: 50px;
+    color: #07558e;
+}
+
+.fa-git-alt:hover {
+    color: #ec6f2c;
+}
+
+.fa-github:hover {
+    color: #000;
+}
+
+.fa-figma:hover {
+    color: #731d8d;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.parrafo {
+    width: 60%;
+    height: 400px;
+}
+
+.parrafo p {
+    margin-top: 80px;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid #070621;
+    border-radius: 16px;
+    color: #070621;
+}
+
+.btn:hover {
+    color: #f2f2f2;
+    background-color: rgba(7, 6, 33, 0.8);
+    font-weight: bold;
+}
+
+
+/* ------------------------------------------------------------ */
+/* ------------------------- PROYECTOS ------------------------ */
+/* ------------------------------------------------------------ */
+
+#proyects {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#proyects h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+
+/* ------------------------------------------------------------ */
+/* ------------------------- ANIMACIONES ---------------------- */
+/* ------------------------------------------------------------ */
+
+@keyframes moverDerecha {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moverArriba {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
