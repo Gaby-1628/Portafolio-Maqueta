@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/623d2400f0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="js/scrollreveal.js"></script>
     <title>gabyrds</title>
 </head>
@@ -14,16 +15,29 @@
 <body>
     <header>
         <nav class="menu">
-            <section class="navbard">
-                <a href="#inicio">Inicio</a>
-                <a href="#abaut">Sobre mi</a>
-                <a href="#proyects">Proyectos</a>
-                <a href="">Contacto</a>
+            <section class="menu_container">
+                <ul class="menu_links">
+                    <li class="menu_item">
+                        <a href="#inicio" class="menu_link">Inicio</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#abaut" class="menu_link">Sobre mi</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#proyects" class=" menu_link">Proyectos</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#abaut" class="menu_link">Contacto</a>
+                    </li>
+                </ul>
+                <div class="menu_hamburger">
+                    <img src="Img/menu.svg" class="menu_img">
+                </div>
             </section>
         </nav>
         <section id="inicio" class="banner">
             <div class="textos">
-                <h1 class="titulo">Hola, mi nombre es Gabriela Rodriguez.</h1>
+                <h1 class="titulo type">Hola, mi nombre es Gabriela.</h1>
                 <h2 class="subtitulo">Soy programadora web full-stack</h2>
                 <a href="#proyects" class="button">Ver más <i class="fa-solid fa-arrow-right"></i></a>
             </div>
@@ -36,7 +50,7 @@
         </svg>
     </div>
     <main>
-        <section id="abaut">
+        <section id="abaut" class="sobre-mi contenedor">
             <h2 class="title">SOBRE MI</h2>
             <div class="softkil">
                 <i class="fa-brands fa-html5"></i>
@@ -46,38 +60,83 @@
                 <i class="fa-brands fa-node"></i>
                 <i class="fa-brands fa-react"></i>
                 <i class="fa-brands fa-git-alt"></i>
-                <!-- <i class="fa-brands fa-github"></i> -->
                 <i class="fa-brands fa-figma"></i>
                 <i class="fa-brands fa-npm"></i>
             </div>
-            <div class="container">
-                <img src="img/Coding _Isometric.svg" alt="">
+            <div class="contenedor-sobre-mi">
+                <img src="img/Coding _Isometric.svg">
                 <div class="parrafo">
-                    <p>
-                        Soy programadora web Full-Stak freelance en Argentina, Chubut. <br>
-                        Tengo gran pasión por la programación, me encanta crear piezas visuales atractivas, efectos de
-                        interfaz de usuario, animaciones y creación de experiencias de usuario intuitivas y dinámicas.
-                    </p>
-                    <a href="curriculum.html" class="btn">Ver mi CV</a>
+                    <div class="texto">
+                        <h3 class="n-abut">
+                            Soy programadora web Full-Stak freelance en Argentina, Chubut.
+                        </h3>
+                        <p>
+                            Tengo gran pasión por la programación, me encanta crear piezas visuales atractivas, efectos de
+                            interfaz de usuario, animaciones y creación de experiencias de usuario intuitivas y dinámicas.
+                        </p>
+                        <a href="curriculum.html" class="btn">Ver mi CV</a>
+                    </div>
                 </div>
                 
             </div>
         </section>
-        <section id="proyects">
-            <h2>PROYECTOS</h2>
-            <div class="proyectos">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
+        <section class="gallery" id="proyects">
+            <article class="contenedor">
+                <h2 class="title">PROYECTOS</h2>
+                <div class="contenedor-galerry">
+                    <img src="img/agileminds.png" class="img-gallery">
+                    <img src="img/lol.png" class="img-gallery">
+                    <img src="img/maqueta.png" class="img-gallery">
+                    <img src="img/magic.png" class="img-gallery">
+                    <img src="img/lamadriguera.png" class="img-gallery">
+                    <img src="img/maqueta.png" class="img-gallery">
+                </div>
+            </article>
         </section>
-        <section id="contact">
-
+        <section class="imagen-light">
+            <a href="" class="close"><i class="fa-regular fa-circle-xmark"></i></a>
+            <img src="img/agileminds.png" class="agregar-imagen">
+        </section>
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitle">Me especializo en:</h2>
+            <article class="experts">
+                <div class="cont-expert">
+                    <img src="img/Landing Page_Isometric.svg" alt="">
+                    <h3 class="n-expert">Diseño</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/Web Developer_Isometric.svg" alt="">
+                    <h3 class="n-expert">Front-End</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/SEO_Isometric.svg" alt="">
+                    <h3 class="n-expert">SEO</h3>
+                </div>
+            </article>
         </section>
     </main>
-    
-
+    <footer id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">Gabriela Rodriguez</h2>
+                <p>diseño y programo páginas web</p>
+            </div>
+            <div class="social-media">
+                <a href="#" class="social-media-icon">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="#" class="social-media-icon">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="#" class="social-media-icon">
+                    <i class='bx bxl-whatsapp'></i>
+                </a>
+            </div>
+        </div>
+        <div class="linea"></div>
+    </footer>
     <script src="js/main.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
 
 </html>

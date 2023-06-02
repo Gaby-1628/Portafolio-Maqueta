@@ -59,3 +59,4 @@ sr.reveal('.fa-npm', {
     origin: 'rigth',
     distance: '-100px'
 });
+
